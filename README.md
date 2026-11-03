@@ -2,14 +2,15 @@
 https://www.udemy.com/course/the-complete-guide-to-angular-2/
 https://github.com/mschwarzmueller/angular-complete-guide-course-resources.git
 
-# Deploy
+# CLI
 ```
+// Deploy
 npm start
-```
-# New Component
-```
+
+// New Component
 ng generate component #name#
 ```
+
 # TypeScript
 StringInterpolation (Von HTMl auf TypeScript Properties zugreifen): 
 ```html
