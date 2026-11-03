@@ -45,9 +45,34 @@ The value of 'selected' must be a boollean.
 	...
 </button>
 
+## Two-Way-Binding
+TypScript:
+import { FormsModule } from '@angular/forms';
+@Component({
+  imports: [FormsModule],
+})
+
+HTML:
+<input type="text" id="title" name="title" [(ngModel)]="enteredSummary"/>
+
+## Shared-Component -> Kinder durchreichen
+<div>
+    <ng-content />
+</div>
+
+## DependencyInjection-Component
+@Injectable({ providedIn: 'root' })
+excport class MyService {
+	// ...
+}
+
 # Other
 Properties VS. Attribut - Binding
 https://jakearchibald.com/2024/attributes-vs-properties/
 
 Binding VS. Signals + Computed
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/43788538
+
+DatePipe-Formats
+https://v17.angular.io/api/common/DatePipe
+
